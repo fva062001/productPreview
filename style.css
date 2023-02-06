@@ -23,7 +23,7 @@ article {
 }
 
 img {
-  width: 50%;
+  width: 60%;
   border-bottom-left-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
 }
@@ -52,6 +52,7 @@ p {
 }
 
 header {
+  letter-spacing: 5px;
   color: #6c7289;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
