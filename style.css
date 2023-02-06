@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+body {
+  background-color: #f2eae2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+article {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 37.5rem;
+  max-height: 28.12rem;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+img {
+  width: 50%;
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+main {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 2rem 2rem;
+  border-bottom-right-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+h1 {
+  color: #1c232b;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+header {
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+#price {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin-bottom: 1.5rem;
+}
+
+#price :first-child {
+  color: #3d8168;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#price :nth-child(2) {
+  text-decoration: line-through;
+  height: fit-content;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background-color: #3d8168;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a4032;
+}
+
+#desktop {
+  display: block;
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: 640px) and (min-width: 320px) {
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  article {
+    position: relative;
+    margin-top: 40px;
+    flex-direction: column;
+    max-width: 90vw;
+  }
+
+  img {
+    width: inherit;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.8rem;
+  }
+
+  main {
+    width: inherit;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.8rem;
+    padding: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
